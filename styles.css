@@ -150,7 +150,14 @@ button{
     font-size: 18px;
     border: none;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #fff;
+    background: #fff;
+    border-radius: 5px;
+}
+
+button:nth-of-type(1){
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
 }
 
 button:hover{
@@ -322,4 +329,28 @@ footer{
     background-image: linear-gradient(to bottom right, rgba(0,0,0.5));
     text-align: center;
     color: grey;
+}
+
+@media only screen and (max-width:968px){
+    .capabilities ol{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:5px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .capabilities li:nth-child(5){
+        grid-column:span(2);
+        text-align: justify;
+        margin: 25px auto;
+    }
+
+    button{
+        padding:12px 30px;
+        font-size: 18px;
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #fff;
+    }
 }
