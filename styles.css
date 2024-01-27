@@ -28,12 +28,14 @@ body{
 .nav-bar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .nav-bar ul{
     list-style: none;
     display: flex;
+    justify-content: center;
+    width: 100%;
     gap: 15px;
     margin: 0;
 }
@@ -48,7 +50,7 @@ body{
 
 .nav-bar ul li a{
     text-decoration: none;
-    color: gray;
+    color: rgb(199, 196, 196);
 }
 
 .nav-bar ul:last-child{
@@ -224,7 +226,7 @@ button:hover{
     background-color:inherit;
     padding: 20px;
     transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-    color: gray;
+    color: rgb(199, 196, 196);
     font-size: 22px;
 }
 
@@ -246,7 +248,7 @@ button:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     margin: 0 auto;
     padding: 70px 0;
 }
@@ -264,8 +266,8 @@ button:hover{
 }
 
 .project-card{
-    width: 500px;
-    height: 400px;
+    width: 250px;
+    height: 259px;
     border: 2px solid transparent;
     perspective: 1000px;
     
@@ -275,13 +277,14 @@ button:hover{
     width:100%;
     height: 100%;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 .card-wrapper{
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 0.1s;
     transform-origin: center;
 }
 
@@ -316,7 +319,7 @@ button:hover{
 
 .contact-me p, .my-projects p{
     font-size: 20px;
-    color: grey;
+    color: rgb(199, 196, 196);
 }
 
 .fa-solid{
@@ -328,22 +331,16 @@ footer{
     background-color: rgb(0, 0, 0);
     background-image: linear-gradient(to bottom right, rgba(0,0,0.5));
     text-align: center;
-    color: grey;
+    color: rgb(199, 196, 196);
 }
 
 @media only screen and (max-width:968px){
     .capabilities ol{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap:5px;
-        list-style: none;
+        display: flex;
         padding: 0;
-    }
-
-    .capabilities li:nth-child(5){
-        grid-column:span(2);
-        text-align: justify;
-        margin: 25px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     button{
@@ -353,4 +350,27 @@ footer{
         font-family: 'Times New Roman', Times, serif;
         background-color: #fff;
     }
+
+    .img-container{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
+
+    .nav-bar{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .nav-bar ul{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        margin: 20px;
+    }
+
 }
