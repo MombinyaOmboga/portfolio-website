@@ -625,7 +625,7 @@ section {
     transition: var(--transition);
 }
 
-.icons{
+.icon{
     width: 20px;
     height: 20px;
     color: var(--text-primary);
