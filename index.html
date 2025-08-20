@@ -22,6 +22,7 @@
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
@@ -258,9 +259,9 @@
                         <h3>FitMe Health App</h3>
                         <p>A comprehensive fitness tracking application with workout plans, nutrition tracking, and progress monitoring.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQlite</span>
                             <span class="tech-tag">Tailwind</span>
                         </div>
                     </div>
@@ -284,10 +285,10 @@
                         <h3>Laundry Management System</h3>
                         <p>Complete laundry service management with booking, tracking, and payment integration for local businesses.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Django</span>
                             <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Stripe</span>
-                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Tailwind</span>
                         </div>
                     </div>
                 </div>
@@ -318,6 +319,32 @@
                     </div>
                 </div>
 
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="../assets/images/portfolio.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Live">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>IronTrack Fitness</h3>
+                        <p>A comprehensive fitness tracking platform for personal trainers built with Next.js, Firebase, and Tailwind CSS. Optimised for Web and responsive for mobile</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Next</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card" data-category="api">
                     <div class="project-image">
                         <img src="../assets/images/sb4u.jpg" alt="Database Project">
@@ -338,7 +365,6 @@
                         <div class="project-tech">
                             <span class="tech-tag">Express.js</span>
                             <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Redis</span>
                             <span class="tech-tag">JWT</span>
                         </div>
                     </div>
@@ -406,10 +432,10 @@
                             <i data-lucide="linkedin"></i>
                         </a>
                         <a href="https://twitter.com/mombinyaomboga" target="_blank" class="social-link">
-                            <i data-lucide="twitter"></i>
+                            <i class="fab fa-twitter"></i>
                         </a>
                         <a href="https://frontendmentor.io/profile/MombinyaOmboga" target="_blank" class="social-link">
-                            <i data-lucide="monitor"></i>
+                            <i class="fa-solid fa-tv" style="color: #000000;"></i>
                         </a>
                     </div>
                 </div>
@@ -441,6 +467,8 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
