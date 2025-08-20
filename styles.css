@@ -625,6 +625,12 @@ section {
     transition: var(--transition);
 }
 
+.icons{
+    width: 20px;
+    height: 20px;
+    color: var(--text-primary);
+}
+
 .social-link:hover {
     background: var(--gradient-primary);
     border-color: var(--primary-color);
